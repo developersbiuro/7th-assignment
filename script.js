@@ -122,3 +122,7 @@ function result8(){
 
 //9th-program
 console.log("9)-check whether it is alphabet, digit or special character");
+function result9(){
+  var input = prompt("enter any character")
+  if(input >= 'a' && input <= 'z' || input >= 'A' && input <= 'Z' )
+}
