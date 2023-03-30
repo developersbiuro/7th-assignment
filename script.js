@@ -124,5 +124,125 @@ function result8(){
 console.log("9)-check whether it is alphabet, digit or special character");
 function result9(){
   var input = prompt("enter any character")
-  if(input >= 'a' && input <= 'z' || input >= 'A' && input <= 'Z' )
+  if(input >= 'a' && input <= 'z' || input >= 'A' && input <= 'Z') {
+    console.log("result9 =",input, "is a alphabet");
+  }
+  else if(input >= 0 && input <= 9){
+    console.log("result9 =",input, "is a digit");
+  }
+  else{
+    console.log("result9 =",input, "is a special character");
+  }
 }
+//result9()
+
+//10th-program
+console.log("10)-check whether a character is uppercase or lowercase alphabet");
+function result10(){
+  var alphabet = prompt("enter a alphabet")
+  if(alphabet >= 'a' && alphabet <= 'z'){
+    console.log("result10 =",alphabet, "is a lowercase alphabet");
+  }
+  else if(alphabet >= 'A' && alphabet <= 'Z'){
+    console.log("result10 =",alphabet, "is a uppercase alphabet");
+  }
+}
+//result10()
+
+//11th-program
+console.log("11)-input week number and print week day");
+function result11(){
+  var weekday = prompt("enter a weekday number");
+  if(weekday == 1){
+    console.log("result11 = its a MONDAY");
+  }
+  else if( weekday == 2){
+    console.log("result11 = its a TUESDAY");
+  }
+  else if( weekday == 3){
+    console.log("result11 = its a WEDNESDAY");
+  }
+  else if( weekday == 4){
+    console.log("result11 = its a THURSDAY");
+  }
+  else if( weekday == 5){
+    console.log("result11 = its a FRIDAY");
+  }
+  else if( weekday == 6){
+    console.log("result11 = its a SATURDAY");
+  }
+  else if( weekday == 7){
+    console.log("result11 = its a SUNDAY");
+  }
+  else{
+    console.log("invalid Week Number");
+  }
+}
+//result11()
+
+
+//12th-program
+console.log("12)-input month num and print Num of days in that month");
+function result12(){
+  var monthNum = prompt("enter a month number")
+  if(monthNum == 1){
+    console.log("result12 = There is 31 days in 'January'");
+  }
+  else if(monthNum == 2){
+    console.log("result12 = There is 28 days in 'February'");
+  }
+  else if(monthNum == 3){
+    console.log("result12 = There is 31 days in 'March'");
+  }
+  else if(monthNum == 4){
+    console.log("result12 = There is 30 days in 'April'");
+  }
+  else if(monthNum == 5){
+    console.log("result12 = There is 31 days in 'May'");
+  }
+  else if(monthNum == 6){
+    console.log("result12 = There is 30 days in 'June'");
+  }
+  else if(monthNum == 7){
+    console.log("result12 = There is 31 days in 'July'");
+  }
+  else if(monthNum == 8){
+    console.log("result12 = There is 31 days in 'August'");
+  }
+  else if(monthNum == 9){
+    console.log("result12 = There is 30 days in 'September'");
+  }
+  else if(monthNum == 10){
+    console.log("result12 = There is 31 days in 'October'");
+  }
+  else if(monthNum == 11){
+    console.log("result12 = There is 30 days in 'November'");
+  }
+  else if(monthNum == 12){
+    console.log("result12 = There is 31 days in 'December'");
+  }
+  else{
+    console.log("result12 = Invalid Month number");
+  }
+}
+//result12()
+
+//13th-program
+console.log("13)- count total number of notes in given amount");
+console.log("result = I can't do this");
+
+//14th-program
+console.log("14)-input angles of a triangle and check whether triangle is valid or not");
+
+function result14(){
+  var p =+ prompt("enter 1st angle of triangle")
+  var q =+ prompt("enter 2nd angle of triangle")
+  var r =+ prompt("enter 3rd angle of triangle")
+  if(p + q + r == 180){
+    console.log("result14 = its a Valid Triangle");
+  }
+  else{
+    console.log("result14 = its a invalid Triangle");
+  }
+}
+//result14()
