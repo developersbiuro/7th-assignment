@@ -246,3 +246,18 @@ function result14(){
   }
 }
 //result14()
+
+//15th-program
+console.log("15)-input all sides of a triangle and check whether triangle is valid or not");
+function result15(){
+  var side1 =+ prompt("enter 1st side of triangle")
+  var side2 =+ prompt("enter 2nd side of triangle")
+  var side3 =+ prompt("enter 3rd side of triangle")
+  if((side1 + side2 > side3) && (side2 + side3 > side1) && (side1 + side3 > side2)){
+    console.log("result15 = sides form a valid Triangle");
+  }
+  else{
+    console.log("result15 = sides not form valid triangle");
+  }
+}
+result15()
