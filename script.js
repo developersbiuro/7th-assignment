@@ -1,5 +1,5 @@
 
-  //1st- program
+  //1st- program--------------------------------------------------
   console.log("1)-find maximum between two numbers.");
  function result1() {
   a =+ prompt("enter 1st number");
@@ -17,7 +17,7 @@
 
 console.log("2)-For finding maximum b/w 3 num")
 
-//2nd program
+//2nd program----------------------------------------------------
 function result2() {
   A =+ prompt("enter 1st num")
   B =+ prompt( "enter 2nd num")
@@ -36,7 +36,7 @@ function result2() {
 
 //result2()
 
-//3rd-program
+//3rd-program-------------------------------------------------------
 console.log('3)-check if a number is negative, positive or zero.');
 function result3(){
   
@@ -54,7 +54,7 @@ function result3(){
 
 //result3()
 
-//4th-program
+//4th-program--------------------------------------------------------------
 console.log("4)-check whether a number is divisible by 5 and 11 or not")
 function result4(){
   var result4 =+ prompt("enter a number")
@@ -67,7 +67,7 @@ function result4(){
 }
 //result4()
 
-//5th-program
+//5th-program------------------------------------------------
 console.log("5)-check whether a number is even or odd");
 
 function result5(){
@@ -81,7 +81,7 @@ function result5(){
 }
 //result5()
 
-//6th-program
+//6th-program-------------------------------------------------
 console.log('6)-check whether a year is leap year or not');
 function result6(){
   var result6 =+ prompt("enter a year")
@@ -94,7 +94,7 @@ function result6(){
 }
 //result6()
 
-//7th-program
+//7th-program------------------------------------------------------
 console.log("7)-check whether a character is alphabet or not");
 function result7(){
   var character = prompt("enter a character");
@@ -107,7 +107,7 @@ function result7(){
 }
 //result7()
 
-//8th-program
+//8th-program------------------------------------------------------
 console.log("8)-check whether character is vowel or consonant.");
 function result8(){
   var letter = prompt("enter a alphabet")
@@ -120,7 +120,7 @@ function result8(){
 }
 //result8()
 
-//9th-program
+//9th-program-------------------------------------------------
 console.log("9)-check whether it is alphabet, digit or special character");
 function result9(){
   var input = prompt("enter any character")
@@ -136,7 +136,7 @@ function result9(){
 }
 //result9()
 
-//10th-program
+//10th-program----------------------------------------------
 console.log("10)-check whether a character is uppercase or lowercase alphabet");
 function result10(){
   var alphabet = prompt("enter a alphabet")
@@ -149,7 +149,7 @@ function result10(){
 }
 //result10()
 
-//11th-program
+//11th-program-------------------------------------------------
 console.log("11)-input week number and print week day");
 function result11(){
   var weekday = prompt("enter a weekday number");
@@ -181,7 +181,7 @@ function result11(){
 //result11()
 
 
-//12th-program
+//12th-program---------------------------------------------------
 console.log("12)-input month num and print Num of days in that month");
 function result12(){
   var monthNum = prompt("enter a month number")
@@ -227,11 +227,11 @@ function result12(){
 }
 //result12()
 
-//13th-program
+//13th-program-------------------------------------------------
 console.log("13)- count total number of notes in given amount");
 console.log("result = I can't do this");
 
-//14th-program
+//14th-program-----------------------------------------------
 console.log("14)-input angles of a triangle and check whether triangle is valid or not");
 
 function result14(){
@@ -247,7 +247,7 @@ function result14(){
 }
 //result14()
 
-//15th-program
+//15th-program-----------------------------------------------------
 console.log("15)-input all sides of a triangle and check whether triangle is valid or not");
 function result15(){
   var side1 =+ prompt("enter 1st side of triangle")
@@ -260,4 +260,31 @@ function result15(){
     console.log("result15 = sides not form valid triangle");
   }
 }
-result15()
+//result15()
+
+//16th-program----------------------------------------------------
+console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
+var sideP =+ prompt("enter 1st side of triangle")
+var sideQ =+ prompt("enter 2nd side of triangle")
+var sideR =+ prompt("enter 3rd side of triangle")
+if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
+  function result16(){
+    if(sideP == sideQ && sideQ == sideR){
+      console.log("result16 = its a 'equiletral triangle'");
+    }
+    else if(sideP == sideQ || sideQ == sideR || sideP == sideR){
+      console.log("result16 = its a 'isosceles triangle'");
+    }
+    else{
+      console.log("result16 = its a 'scalene triangle'");
+    }
+  }
+  //result16()
+}
+else{
+  console.log("result16 = its not valid triangle");
+}
+
+
+//17th-program
+console.log("17)-find all roots of a quadratic equation");
