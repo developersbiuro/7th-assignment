@@ -264,9 +264,9 @@ function result15(){
 
 //16th-program----------------------------------------------------
 console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
-//var sideP =+ prompt("enter 1st side of triangle")
-//var sideQ =+ prompt("enter 2nd side of triangle")
-//var sideR =+ prompt("enter 3rd side of triangle")
+var sideP =+ prompt("enter 1st side of triangle")
+var sideQ =+ prompt("enter 2nd side of triangle")
+var sideR =+ prompt("enter 3rd side of triangle")
 if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
   function result16(){
     if(sideP == sideQ && sideQ == sideR){
@@ -304,3 +304,22 @@ function result17(){
   }
 }
 //result17()
+
+
+//18th-program
+console.log("18)-calculate profit or loss");
+function result18(){
+  var cost =+ prompt("enter cost price in rupees")
+  var earn =+ prompt("enter earn price in rupees")
+  var profitOrLoss = earn - cost
+  if(profitOrLoss > 0){
+    console.log("result18 = you earn profit of", profitOrLoss ,"Rs/-");
+  }
+  else if(profitOrLoss < 0){
+    console.log("result18 = you made a loss of", -profitOrLoss,"Rs/-");
+  }
+  else{
+    console.log("result18 = you neither made loss nor profit");
+  }
+}
+result18()
