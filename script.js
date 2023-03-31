@@ -264,9 +264,9 @@ function result15(){
 
 //16th-program----------------------------------------------------
 console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
-var sideP =+ prompt("enter 1st side of triangle")
-var sideQ =+ prompt("enter 2nd side of triangle")
-var sideR =+ prompt("enter 3rd side of triangle")
+//var sideP =+ prompt("enter 1st side of triangle")
+//var sideQ =+ prompt("enter 2nd side of triangle")
+//var sideR =+ prompt("enter 3rd side of triangle")
 if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
   function result16(){
     if(sideP == sideQ && sideQ == sideR){
@@ -282,9 +282,25 @@ if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)
   //result16()
 }
 else{
-  console.log("result16 = its not valid triangle");
+  console.log("result16 = its  Invalid triangle");
 }
 
 
 //17th-program
 console.log("17)-find all roots of a quadratic equation");
+function result17(){
+  var z =+ prompt("enter x^2 coefficent")
+  var x =+ prompt("enter x coefficent")
+  var v =+ prompt("enter constant value")
+  var disc =+ (x*x) - 4* (z * v)
+  if(disc == 0){
+    console.log("result17 = 'roots are equal and real'");
+  }
+  else if(disc > 0){
+    console.log("result17 = 'the roots are rational and unequal ");
+  }
+  else{
+    console.log("result17 = 'the roots are irrational and unequal");
+  }
+}
+//result17()
