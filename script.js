@@ -1,15 +1,19 @@
 
   //1st- program--------------------------------------------------
-  console.log("1)-find maximum between two numbers.");
+  
  function result1() {
-  a =+ prompt("enter 1st number");
-  b =+ prompt("enter 2nd number");
-  var result1 = (a,b);
-  if(result1 = a > b){
-    console.log("result1 =",a, "is a maximum number than",b)
+  a = document.getElementById("1st-a");
+  b = document.getElementById("1st-b")
+  // var result1 = (a.value , b.value);
+  var pera1 = document.getElementById("p-1")
+  if( a.value > b.value){
+    pera1.innerHTML = "Result is: 1st number is maximum "
+  }
+  else if(b.value > a.value){
+    pera1.innerHTML = "Result is: 2nd number is maximum "
   }
   else{
-    console.log("result1 =",b ,'is a maximum number than' , a)
+    pera1.innerHTML = "Result is: both are equal "
   }
  }
 
@@ -263,27 +267,27 @@ function result15(){
 //result15()
 
 //16th-program----------------------------------------------------
-console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
-var sideP =+ prompt("enter 1st side of triangle")
-var sideQ =+ prompt("enter 2nd side of triangle")
-var sideR =+ prompt("enter 3rd side of triangle")
-if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
-  function result16(){
-    if(sideP == sideQ && sideQ == sideR){
-      console.log("result16 = its a 'equiletral triangle'");
-    }
-    else if(sideP == sideQ || sideQ == sideR || sideP == sideR){
-      console.log("result16 = its a 'isosceles triangle'");
-    }
-    else{
-      console.log("result16 = its a 'scalene triangle'");
-    }
-  }
-  //result16()
-}
-else{
-  console.log("result16 = its  Invalid triangle");
-}
+// console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
+// var sideP =+ prompt("enter 1st side of triangle")
+// var sideQ =+ prompt("enter 2nd side of triangle")
+// var sideR =+ prompt("enter 3rd side of triangle")
+// if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
+//   function result16(){
+//     if(sideP == sideQ && sideQ == sideR){
+//       console.log("result16 = its a 'equiletral triangle'");
+//     }
+//     else if(sideP == sideQ || sideQ == sideR || sideP == sideR){
+//       console.log("result16 = its a 'isosceles triangle'");
+//     }
+//     else{
+//       console.log("result16 = its a 'scalene triangle'");
+//     }
+//   }
+//   //result16()
+// }
+// else{
+//   console.log("result16 = its  Invalid triangle");
+// }
 
 
 //17th-program
@@ -322,4 +326,4 @@ function result18(){
     console.log("result18 = you neither made loss nor profit");
   }
 }
-result18()
+//result18()
