@@ -19,68 +19,66 @@
 
 //result1()
 
-console.log("2)-For finding maximum b/w 3 num")
 
 //2nd program----------------------------------------------------
 function result2() {
-  A =+ prompt("enter 1st num")
-  B =+ prompt( "enter 2nd num")
-  C =+ prompt("enter 3rd num")
-  var result2 = (A,B,C)
-  if(result2 = A > B , A > C ) {
-    console.log("result2 =",A , " is maximum than ", B,"and" , C)
+  var A =+ document.getElementById("2nd-a")
+  var B =+ document.getElementById("2nd-b")
+  var C =+ document.getElementById("2nd-c")
+  var p2 = document.getElementById("p-2")
+  if( A.value > B.value , A.value > C.value ){
+    p2.innerHTML = "Result is: 1st number is maximum"
   }
-  if(result2 = B > A, B > C){
-    console.log("result2 =",B , " is maximum than ",A ,"and" , C);
+  if(result2 = B.value > A.value, B.value> C.value){
+    p2.innerHTML = "Result is: 2nd number is maximum"
   }
   else{
-    console.log("result2 =",C , " is maximum than ", A,"and" , B);
+    p2.innerHTML = "Result is: 3rd number is maximum"
   }
 }
 
 //result2()
 
 //3rd-program-------------------------------------------------------
-console.log('3)-check if a number is negative, positive or zero.');
 function result3(){
   
-  var result3 =+ prompt("enter a number")
-  if(result3 == 0){
-    console.log("result3 =", result3,"num is zero");
+  var result3 = document.getElementById("3rd-a")
+  var p3 = document.getElementById("p-3")
+  if(result3.value > 0){
+    p3.innerHTML = "Result is: num is positive"
   }
-  else if(result3 < 0){
-    console.log("result3 =", result3,"num is negative");
+  else if(result3.value < 0){
+    p3.innerHTML = "Result is: num is negative"
   }
   else{
-    console.log("result3 =", result3,"num is positive");
+    p3.innerHTML = "Result is: num is zero"
   }
 }
 
 //result3()
 
 //4th-program--------------------------------------------------------------
-console.log("4)-check whether a number is divisible by 5 and 11 or not")
 function result4(){
-  var result4 =+ prompt("enter a number")
-  if(result4 % 5 == 0 && result4 % 11 == 0){
-    console.log("result4 =",result4," is divisible by 5 and 11");
+  var result4 = document.getElementById("4th-a")
+  var p4 = document.getElementById("p-4")
+  if(result4.value % 5 == 0 && result4.value % 11 == 0){
+    p4.innerHTML = "Result is: This num is divisible by 5 and 11"
   }
   else{
-    console.log("result4 =",result4," is not divisible by 5 and 11");
+    p4.innerHTML = "Result is: This num is not divisible by 5 and 11"
   }
 }
 //result4()
 
 //5th-program------------------------------------------------
-console.log("5)-check whether a number is even or odd");
-
 function result5(){
-  var result5 =+ prompt("enter number")
-  if(result5 % 2 == 0){
-    console.log("result5 =",result5,"is a even num")
+  var result5 =+ document.getElementById("5th-a") 
+  var p5 = document.getElementById("p-5")
+  if(result5.value % 2 == 0){
+    p5.innerHTML = "this is a even num"
   }
   else{
-    console.log("result5 =",result5,"is a odd num");
+    p5.innerHTML = "this is a odd num"
   }
 }
 //result5()
