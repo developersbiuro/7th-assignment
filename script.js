@@ -247,15 +247,15 @@ console.log("result = I can't do this");
 
 
 function result14(){
-  var p = document.getElementById("14th-a")
-  var q = document.getElementById("14th-b")
-  var r = document.getElementById("14th-c")
+  var p = parseInt( document.getElementById("14th-a").value )
+  var q = parseInt( document.getElementById("14th-b").value )
+  var r = parseInt( document.getElementById("14th-c").value )
   var p14 = document.getElementById("p-14")
-  if(p.value + q.value + r.value == 180){
-    p14.innerHTML = "Result is: Its a Valid Triangle";
+  if((p + q + r) == 180){
+    p14.innerHTML = "Result is:  Its a Valid Triangle";
   }
   else{
-    p14.innerHTML = "Result is: Its a Invalid Triangle";
+    p14.innerHTML = "Result is:  Its a Invalid Triangle";
   }
 }
 //result14()
@@ -263,14 +263,15 @@ function result14(){
 //15th-program-----------------------------------------------------
 console.log("15)-input all sides of a triangle and check whether triangle is valid or not");
 function result15(){
-  var side1 =+ prompt("enter 1st side of triangle")
-  var side2 =+ prompt("enter 2nd side of triangle")
-  var side3 =+ prompt("enter 3rd side of triangle")
+  var side1 = parseInt(document.getElementById("15th-a").value) 
+  var side2 = parseInt(document.getElementById("15th-a").value)
+  var side3 = parseInt(document.getElementById("15th-a").value)
+  var p15 = document.getElementById("p-15")
   if((side1 + side2 > side3) && (side2 + side3 > side1) && (side1 + side3 > side2)){
-    console.log("result15 = sides form a valid Triangle");
+    p15.innerHTML = "Result is: These sides form a Valid Triangle";
   }
   else{
-    console.log("result15 = sides not form valid triangle");
+    p15.innerHTML = "Result is: These sides form a Invalid Triangle";
   }
 }
 //result15()
