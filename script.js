@@ -22,18 +22,21 @@
 
 //2nd program----------------------------------------------------
 function result2() {
-  var A =+ document.getElementById("2nd-a")
-  var B =+ document.getElementById("2nd-b")
-  var C =+ document.getElementById("2nd-c")
+  var A = document.getElementById("2nd-a")
+  var B = document.getElementById("2nd-b")
+  var C = document.getElementById("2nd-c")
   var p2 = document.getElementById("p-2")
-  if( A.value > B.value , A.value > C.value ){
+  if(A.value > B.value && A.value > C.value ){
     p2.innerHTML = "Result is: 1st number is maximum"
   }
-  if(result2 = B.value > A.value, B.value> C.value){
+  else if(B.value > A.value && B.value> C.value){
     p2.innerHTML = "Result is: 2nd number is maximum"
   }
-  else{
+  else if (C.value > A.value && C.value > B.value ) {
     p2.innerHTML = "Result is: 3rd number is maximum"
+  }
+  else{
+    p2.innerHTML = "Result is: all are equal"
   }
 }
 
@@ -72,159 +75,166 @@ function result4(){
 
 //5th-program------------------------------------------------
 function result5(){
-  var result5 =+ document.getElementById("5th-a") 
+  var result5 = document.getElementById("5th-a") 
   var p5 = document.getElementById("p-5")
   if(result5.value % 2 == 0){
-    p5.innerHTML = "this is a even num"
+    p5.innerHTML = "Result is: this is a even num"
   }
   else{
-    p5.innerHTML = "this is a odd num"
+    p5.innerHTML = "Result is: this is a odd num"
   }
 }
 //result5()
 
 //6th-program-------------------------------------------------
-console.log('6)-check whether a year is leap year or not');
+
 function result6(){
-  var result6 =+ prompt("enter a year")
-  if(result6 % 4 == 0){
-    console.log("result6 =",result6," is a leap year");
+  var result6 = document.getElementById("6th-a")
+  var p6 = document.getElementById("p-6")
+  if(result6.value % 4 == 0){
+    p6.innerHTML = "Result is: This is a leap year";
   }
   else{
-    console.log("result6 =",result6, " is not a leap year");
+    p6.innerHTML = "Result is: This is not a leap year";
   }
 }
 //result6()
 
 //7th-program------------------------------------------------------
-console.log("7)-check whether a character is alphabet or not");
+
 function result7(){
-  var character = prompt("enter a character");
-  if(character >='a' && character <= 'z'){
-    console.log("result7 =",character,"is a alphabet");
+  var character = document.getElementById("7th-a");
+  var p7 = document.getElementById("p-7")
+  if(character.value >= 'a' && character.value <= 'z'){
+    p7.innerHTML = "Result is: This is a Alphabet";
   }
   else{
-    console.log("result7 =",character,"is not a alphabet");
+    p7.innerHTML = "Result is: This is not a Alphabet";
   }
 }
 //result7()
 
 //8th-program------------------------------------------------------
-console.log("8)-check whether character is vowel or consonant.");
+
 function result8(){
-  var letter = prompt("enter a alphabet")
-  if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
-    console.log("result8 =",letter, "is a vowel");
+  var letter = document.getElementById("8th-a")
+  var p8 = document.getElementById("p-8")
+  if(letter.value == 'a' || letter.value == 'e' || letter.value == 'i' || letter.value == 'o' || letter.value == 'u'){
+    p8.innerHTML = "Result is: This is a Vowel Alphabet"
   }
   else{
-    console.log("result8 =",letter, "is a consonant");
+    p8.innerHTML = "Result is: This is a Consonant Alphabet"
   }
 }
 //result8()
 
 //9th-program-------------------------------------------------
-console.log("9)-check whether it is alphabet, digit or special character");
+;
 function result9(){
-  var input = prompt("enter any character")
-  if(input >= 'a' && input <= 'z' || input >= 'A' && input <= 'Z') {
-    console.log("result9 =",input, "is a alphabet");
+  var input = document.getElementById("9th-a")
+  var p9 = document.getElementById("p-9")
+  if((input.value >= 'a' && input.value <= 'z') || (input.value >= 'A' && input.value <= 'Z')) {
+    p9.innerHTML = "Result is : This is a Alphabet";
   }
-  else if(input >= 0 && input <= 9){
-    console.log("result9 =",input, "is a digit");
+  else if(input.value >= 0 && input.value <= 9){
+    p9.innerHTML = "Result is : This is a Digit";
   }
   else{
-    console.log("result9 =",input, "is a special character");
+    p9.innerHTML = "Result is : This is a Special Character";
   }
 }
 //result9()
 
 //10th-program----------------------------------------------
-console.log("10)-check whether a character is uppercase or lowercase alphabet");
+
 function result10(){
-  var alphabet = prompt("enter a alphabet")
-  if(alphabet >= 'a' && alphabet <= 'z'){
-    console.log("result10 =",alphabet, "is a lowercase alphabet");
+  var alphabet = document.getElementById("10th-a")
+  var p10 = document.getElementById("p-10")
+  if(alphabet.value >= 'a' && alphabet.value <= 'z'){
+    p10.innerHTML = "Result is: This is a lowercase Alphabet";
   }
-  else if(alphabet >= 'A' && alphabet <= 'Z'){
-    console.log("result10 =",alphabet, "is a uppercase alphabet");
+  else if(alphabet.value >= 'A' && alphabet.value <= 'Z'){
+    p10.innerHTML = "Result is: This is a Uppercase Alphabet";
   }
 }
 //result10()
 
 //11th-program-------------------------------------------------
-console.log("11)-input week number and print week day");
+
 function result11(){
-  var weekday = prompt("enter a weekday number");
-  if(weekday == 1){
-    console.log("result11 = its a MONDAY");
+  var weekday = document.getElementById("11th-a");
+  var p11 = document.getElementById("p-11")
+  if(weekday.value == 1){
+    p11.innerHTML = "Result is: Its a Monday";
   }
-  else if( weekday == 2){
-    console.log("result11 = its a TUESDAY");
+  else if( weekday.value == 2){
+    p11.innerHTML = "Result is: Its a Tuesday";
   }
-  else if( weekday == 3){
-    console.log("result11 = its a WEDNESDAY");
+  else if( weekday.value == 3){
+    p11.innerHTML = "Result is: Its a Wednesday";
   }
-  else if( weekday == 4){
-    console.log("result11 = its a THURSDAY");
+  else if( weekday.value == 4){
+    p11.innerHTML = "Result is: Its a Thursday";
   }
-  else if( weekday == 5){
-    console.log("result11 = its a FRIDAY");
+  else if( weekday.value == 5){
+    p11.innerHTML = "Result is: Its a Friday";
   }
-  else if( weekday == 6){
-    console.log("result11 = its a SATURDAY");
+  else if( weekday.value == 6){
+    p11.innerHTML = "Result is: Its a Saturday";
   }
-  else if( weekday == 7){
-    console.log("result11 = its a SUNDAY");
+  else if( weekday.value == 7){
+    p11.innerHTML = "Result is: Its a Sunday";
   }
   else{
-    console.log("invalid Week Number");
+    p11.innerHTML = "Result is: invalid week number";
   }
 }
 //result11()
 
 
 //12th-program---------------------------------------------------
-console.log("12)-input month num and print Num of days in that month");
+
 function result12(){
-  var monthNum = prompt("enter a month number")
-  if(monthNum == 1){
-    console.log("result12 = There is 31 days in 'January'");
+  var monthNum = document.getElementById("12th-a")
+  var p12 = document.getElementById("p-12")
+  if(monthNum.value == 1){
+    p12.innerHTML = "Result is: There is 31 days in 'January'";
   }
-  else if(monthNum == 2){
-    console.log("result12 = There is 28 days in 'February'");
+  else if(monthNum.value == 2){
+    p12.innerHTML = "Result is: There is 28 days in 'Feburary'";
   }
-  else if(monthNum == 3){
-    console.log("result12 = There is 31 days in 'March'");
+  else if(monthNum.value == 3){
+    p12.innerHTML = "Result is: There is 31 days in 'March'";
   }
-  else if(monthNum == 4){
-    console.log("result12 = There is 30 days in 'April'");
+  else if(monthNum.value == 4){
+    p12.innerHTML = "Result is: There is 30 days in 'April'";
   }
-  else if(monthNum == 5){
-    console.log("result12 = There is 31 days in 'May'");
+  else if(monthNum.value == 5){
+    p12.innerHTML = "Result is: There is 31 days in 'May'";
   }
-  else if(monthNum == 6){
-    console.log("result12 = There is 30 days in 'June'");
+  else if(monthNum.value == 6){
+    p12.innerHTML = "Result is: There is 30 days in 'June'";
   }
-  else if(monthNum == 7){
-    console.log("result12 = There is 31 days in 'July'");
+  else if(monthNum.value == 7){
+    p12.innerHTML = "Result is: There is 31 days in 'July'";
   }
-  else if(monthNum == 8){
-    console.log("result12 = There is 31 days in 'August'");
+  else if(monthNum.value == 8){
+    p12.innerHTML = "Result is: There is 31 days in 'August'";
   }
-  else if(monthNum == 9){
-    console.log("result12 = There is 30 days in 'September'");
+  else if(monthNum.value == 9){
+    p12.innerHTML = "Result is: There is 30 days in 'September'";
   }
-  else if(monthNum == 10){
-    console.log("result12 = There is 31 days in 'October'");
+  else if(monthNum.value == 10){
+    p12.innerHTML = "Result is: There is 31 days in 'October'";
   }
-  else if(monthNum == 11){
-    console.log("result12 = There is 30 days in 'November'");
+  else if(monthNum.value == 11){
+    p12.innerHTML = "Result is: There is 30 days in 'November'";
   }
-  else if(monthNum == 12){
-    console.log("result12 = There is 31 days in 'December'");
+  else if(monthNum.value == 12){
+    p12.innerHTML = "Result is: There is 31 days in 'December'";
   }
   else{
-    console.log("result12 = Invalid Month number");
+    p12.innerHTML = "Result is: Invalid Month number";
   }
 }
 //result12()
@@ -234,17 +244,18 @@ console.log("13)- count total number of notes in given amount");
 console.log("result = I can't do this");
 
 //14th-program-----------------------------------------------
-console.log("14)-input angles of a triangle and check whether triangle is valid or not");
+
 
 function result14(){
-  var p =+ prompt("enter 1st angle of triangle")
-  var q =+ prompt("enter 2nd angle of triangle")
-  var r =+ prompt("enter 3rd angle of triangle")
-  if(p + q + r == 180){
-    console.log("result14 = its a Valid Triangle");
+  var p = document.getElementById("14th-a")
+  var q = document.getElementById("14th-b")
+  var r = document.getElementById("14th-c")
+  var p14 = document.getElementById("p-14")
+  if(p.value + q.value + r.value == 180){
+    p14.innerHTML = "Result is: Its a Valid Triangle";
   }
   else{
-    console.log("result14 = its a invalid Triangle");
+    p14.innerHTML = "Result is: Its a Invalid Triangle";
   }
 }
 //result14()

@@ -45,8 +45,8 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="your name" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Login</button>
                 </form>
               </div>
             </div>
@@ -54,46 +54,186 @@
           
 
         <!-- 1st- program -->
-        <div class="container" style="color: blue;" >
-          <h2>1)-Find maximum between two numbers</h2>
-          <input type="text" value="00" id="1st-a" placeholder="enter 1st number">
-          <input type="text" value="00" id="1st-b" placeholder="enter 2nd number" > <br>
-          <button onclick="result1()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
-          <p id="p-1">Result is: </p>
+        <div class="container" style="margin-top: 50px;" >
+           <h2>1)-Find maximum between two numbers</h2>
+           <input type="text" value="0000" id="1st-a" placeholder="enter 1st number">
+           <input type="text" value="0000" id="1st-b" placeholder="enter 2nd number" > <br>
+           <button onclick="result1()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+           <p id="p-1">Result is: </p>
         </div>
 
         <!--2nd-program-->
         <div class="container" style="margin-top: 100px;">
-          <h2>2)-Find maximum between three numbers</h2>
-          <input type="text" value="0" placeholder="enter 1st number" id="2nd-a">
-          <input type="text" value="0" placeholder="enter 2nd number" id="2nd-b">
-          <input type="text" value="0" placeholder="enter 3rd number" id="2nd-c">
-          <button onclick="result2() ">answer</button>
-          <p id="p-2">Result is:</p>
+           <h2>2)-Find maximum between three numbers</h2>
+           <input type="text" value="0000" placeholder="enter 1st number" id="2nd-a">
+           <input type="text" value="0000" placeholder="enter 2nd number" id="2nd-b">
+           <input type="text" value="0000" placeholder="enter 3rd number" id="2nd-c"><br>
+           <button onclick="result2() " class="btn btn-info" style="margin-top: 20px;">answer</button>
+           <p id="p-2">Result is:</p>
         </div>
 
         <!--3rd-program-->
         <div class="container" style="margin-top: 100px;" >
           <h2>3)-check whether a number is negative, positive or zero</h2>
-          <input type="text" value="0" id="3rd-a" placeholder="enter any number">
-          <button onclick="result3()">answer</button>
+          <input type="text" value="0000" id="3rd-a" placeholder="enter any number"><br>
+          <button onclick="result3()" class="btn btn-info" style="margin-top: 20px;">answer</button>
           <p id="p-3"> Result is: </p>
         </div>
 
         <!--4th-program-->
         <div class="container" style="margin-top: 100px;">
           <h2>4)-check whether a number is divisible by 5 and 11 or not.</h2>
-          <input type="text" value="0" placeholder="enter any number" id="4th-a">
-          <button onclick="result4()">answer</button>
+          <input type="text" value="0000" placeholder="enter any number" id="4th-a"><br>
+          <button onclick="result4()" class="btn btn-info" style="margin-top: 20px;">answer</button>
           <p id="p-4">Result is:</p>
         </div>
 
         <!--5th-program-->
         <div class="container" style="margin-top: 100px;">
           <h2>5)-check whether a number is even or odd</h2>
-          <input type="text" value="0" id="5th-a" placeholder="enter any number">
-          <button onclick="result5()">answer</button>
+          <input type="text" value="0000" id="5th-a" placeholder="enter any number"><br>
+          <button onclick="result5()" class="btn btn-info" style="margin-top: 20px;">answer</button>
           <p id="p-5">Result is:</p>
+       </div>
+
+       <!--6th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>6)-check whether a year is leap year or not</h2>
+        <input type="text" value="2000" name="" id="6th-a" placeholder="enter a year">
+        <br>
+        <button onclick="result6()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-6">Result is:</p>
+       </div>
+
+       
+       <!--7th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>7)-Check whether a character is alphabet or not</h2>
+        <input type="text" value="abc" name="" id="7th-a" placeholder="enter any character">
+        <br>
+        <button onclick="result7()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-7">Result is:</p>
+       </div>
+
+       
+       <!--8th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>8)-Input any alphabet and check if it is vowel or consonant</h2>
+        <input type="text" value="a" name="" id="8th-a" placeholder="enter any alphabet">
+        <br>
+        <button onclick="result8()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-8">Result is:</p>
+       </div>
+
+       
+       <!--9th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>9)-input any character and check whether it is alphabet, digit or special character</h2>
+        <input type="text" value="" name="" id="9th-a" placeholder="enter any character">
+        <br>
+        <button onclick="result9()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-9">Result is:</p>
+       </div>
+
+       
+       <!--10th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>10)-Check if a character is uppercase or lowercase alphabet</h2>
+        <input type="text" value="aA" name="" id="10th-a" placeholder="enter a alphabet">
+        <br>
+        <button onclick="result10()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-10">Result is:</p>
+       </div>
+
+       
+       <!--11th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>11)-Input week number and print week day</h2>
+        <input type="text" value="00" name="" id="11th-a" placeholder="enter week number">
+        <br>
+        <button onclick="result11()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-11">Result is:</p>
+       </div>
+
+       
+       <!--12th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>12)-Input month number and print number of days in that month</h2>
+        <input type="text" value="00" name="" id="12th-a" placeholder="enter month number">
+        <br>
+        <button onclick="result12()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-12">Result is:</p>
+       </div>
+
+       
+       <!--13th-program-->
+       <div class="container" style="margin-top: 100px;">
+        <h2>13)-Input angles of a triangle and check if triangle is valid or not</h2>
+        <input type="text" value="0" name="" id="14th-a" placeholder="enter 1st angle of triangle">
+        <input type="text" value="0" name="" id="14th-b" placeholder="enter 2nd angle of triangle">
+        <input type="text" value="0" name="" id="14th-c" placeholder="enter 3rd angle of triangle"><br>
+        <button onclick="result14()" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-14">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
+       </div>
+
+       
+       <!--th-program-->
+       <div style="margin-top: 100px;">
+        <h2>6)-</h2>
+        <input type="text" value="0" name="" id="" placeholder="">
+        <input type="text" value="0" name="" id="" placeholder=""><br>
+        <button onclick="" class="btn btn-info" style="margin-top: 20px;">Answer</button>
+        <p id="p-">Result is:</p>
        </div>
 
     
