@@ -277,44 +277,50 @@ function result15(){
 //result15()
 
 //16th-program----------------------------------------------------
-// console.log("16)-check if the triangle is equilateral, isosceles or scalene triangle");
-// var sideP =+ prompt("enter 1st side of triangle")
-// var sideQ =+ prompt("enter 2nd side of triangle")
-// var sideR =+ prompt("enter 3rd side of triangle")
-// if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
-//   function result16(){
-//     if(sideP == sideQ && sideQ == sideR){
-//       console.log("result16 = its a 'equiletral triangle'");
-//     }
-//     else if(sideP == sideQ || sideQ == sideR || sideP == sideR){
-//       console.log("result16 = its a 'isosceles triangle'");
-//     }
-//     else{
-//       console.log("result16 = its a 'scalene triangle'");
-//     }
-//   }
-//   //result16()
-// }
-// else{
-//   console.log("result16 = its  Invalid triangle");
-// }
+
+
+
+function result16() {
+
+  var sideP = parseInt(document.getElementById("16th-a").value)
+  var sideQ = parseInt(document.getElementById("16th-b").value)
+  var sideR = parseInt(document.getElementById("16th-c").value)
+  var p16 = document.getElementById("p-16")
+  if((sideP + sideQ > sideR) && (sideQ + sideR > sideP) && (sideP + sideR > sideQ)){
+    if(sideP == sideQ && sideQ == sideR){
+      p16.innerHTML = "Result is: Its a 'Equiletral Triangle'";
+    }
+    else if(sideP == sideQ || sideQ == sideR || sideP == sideR){
+      p16.innerHTML = "Result is: Its a 'Isosceles Triangle'";
+    }
+    else{
+      p16.innerHTML = "Result is: Its a 'Scalene Triangle'";
+    }
+  }
+  else{
+    p16.innerHTML = "Result is: Its a Invalid triangle";
+  }   
+}
+//result16()
+
 
 
 //17th-program
 console.log("17)-find all roots of a quadratic equation");
 function result17(){
-  var z =+ prompt("enter x^2 coefficent")
-  var x =+ prompt("enter x coefficent")
-  var v =+ prompt("enter constant value")
-  var disc =+ (x*x) - 4* (z * v)
+  var z = parseInt(document.getElementById("17th-a").value)
+  var x = parseInt(document.getElementById("17th-b").value)
+  var v = parseInt(document.getElementById("17th-c").value)
+  var p17 = document.getElementById("p-17")
+  var disc = (x*x) - 4* (z * v)
   if(disc == 0){
-    console.log("result17 = 'roots are equal and real'");
+    p17.innerHTML = "Result is: 'The roots are equal and real'";
   }
   else if(disc > 0){
-    console.log("result17 = 'the roots are rational and unequal ");
+    p17.innerHTML = "Result is: 'The roots are unequal and rstional'";
   }
   else{
-    console.log("result17 = 'the roots are irrational and unequal");
+    p17.innerHTML = "Result is: 'The roots are unequal and irrational'";
   }
 }
 //result17()
@@ -323,17 +329,48 @@ function result17(){
 //18th-program
 console.log("18)-calculate profit or loss");
 function result18(){
-  var cost =+ prompt("enter cost price in rupees")
-  var earn =+ prompt("enter earn price in rupees")
+  var cost = parseInt(document.getElementById("18th-a").value)
+  var earn = parseInt(document.getElementById("18th-b").value)
+  var p18 = document.getElementById("p-18")
   var profitOrLoss = earn - cost
   if(profitOrLoss > 0){
-    console.log("result18 = you earn profit of", profitOrLoss ,"Rs/-");
+    p18.innerHTML = "Result is: You earn profit ";
   }
   else if(profitOrLoss < 0){
-    console.log("result18 = you made a loss of", -profitOrLoss,"Rs/-");
+    p18.innerHTML = "Result is: You made loss ";
   }
   else{
-    console.log("result18 = you neither made loss nor profit");
+    p18.innerHTML = "Result is: You neither earn profit or loss ";
   }
 }
 //result18()
+
+//19th-program
+function result19(){
+  var math = parseInt(document.getElementById("19th-a").value);
+  var phys = parseInt(document.getElementById("19th-b").value);
+  var chem = parseInt(document.getElementById("19th-c").value);
+  var bio  = parseInt(document.getElementById("19th-d").value);
+  var comp = parseInt(document.getElementById("19th-e").value);
+  var p19  = document.getElementById("p-19");
+  var sum = (math + phys + chem + bio + comp) ;
+  var percent = (sum / 500) * 100 ;
+  if(percent >= 90){
+    p19.innerHTML = "Result is: These marks are of A grade";
+  }
+  else if(percent >= 80){
+    p19.innerHTML = "Result is: These marks are of B grade";
+  }
+  else if(percent >= 70){
+    p19.innerHTML = "Result is: These marks are of C grade";
+  }
+  else if(percent >= 60){
+    p19.innerHTML = "Result is: These marks are of D grade";
+  }
+  else if(percent >= 40){
+    p19.innerHTML = "Result is: These marks are of E grade";
+  }
+  else{
+    p19.innerHTML = "Result is: These marks are of F grade"
+  }
+}
