@@ -398,3 +398,27 @@ function result20(){
     p20.innerHTML = 'Result is: The Gross Salary is '+ '  '+ ' ' +  gross3;
   }
 }
+
+//21th-program
+function result21(){
+  var unit = parseInt(document.getElementById("21th-a").value);
+  p21 = document.getElementById("p-21");
+  if( unit <= 50){
+    var bill1 = unit * 0.50;
+    p21.innerHTML = "Result is: The bill is of" + ' ' + bill1 + ' ' +"Rs/-" ;
+  }
+  else if(unit <= 150){
+    var bill2 = unit * 0.75;
+    p21.innerHTML = "Result is: The bill is of" + ' ' + bill2 + ' ' +"Rs/-";
+  }
+  else if(unit <= 250){
+    var bill3 = unit * 1.20;
+    p21.innerHTML = "Result is: The bill is of" + ' ' + bill3 + ' ' +"Rs/-";
+  }
+  else{
+    var bill40 = unit * 1.50;
+    var Bill4 = (20 * bill40) / 100;
+    var bill4 = bill40 + Bill4
+    p21.innerHTML = "Result is: The bill is of" + ' ' + bill4 + ' ' +"Rs/-";
+  }
+}
