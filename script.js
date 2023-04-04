@@ -374,3 +374,27 @@ function result19(){
     p19.innerHTML = "Result is: These marks are of F grade"
   }
 }
+
+//20th- program
+function result20(){
+  var basSalary = parseInt(document.getElementById("20th-a").value);
+  p20 = document.getElementById("p-20");
+  if(basSalary <= 10000){
+    var hra1 = 0.2
+    var da1 = 0.8
+    var gross1 = basSalary + basSalary * hra1 + basSalary * da1
+    p20.innerHTML = 'Result is: The Gross Salary is '+ '  '+ ' ' +  gross1;
+  }
+  else if(basSalary <= 20000){
+    var hra2 = 0.25
+    var da2 = 0.9
+    var gross2 = basSalary + basSalary * hra2 + basSalary * da2
+    p20.innerHTML = 'Result is: The Gross Salary is '+ '  '+ ' ' +  gross2;
+  }
+  else{
+    var hra3 = 0.3
+    var da3 = 0.95
+    var gross3 = basSalary + basSalary * hra3 + basSalary * da3
+    p20.innerHTML = 'Result is: The Gross Salary is '+ '  '+ ' ' +  gross3;
+  }
+}
